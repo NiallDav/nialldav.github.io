@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>printsbyLisa</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+    </style>
+  </head>
+  <body>
+    
+    <nav id="navbar">
+        <div class="navbar_container">
+          <a href="#home" id="navbar_logo">
+            <img id="logo_img" src="printsbyLisa_logo.png" alt="printsbyLisa">
+          </a>
+          <a class="navbar_toggle" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <ul class="navbar_menu" id="navbar-ul">
+            <li class="navbar_item">
+              <a href="index.html" class="navbar_links1" id="home-page">home</a>
+            </li>
+            <!-- <li class="navbar_item">
+              <a href="contact.html" class="navbar_links" id="contact-page">Contact</a>
+            </li> -->
+            <li class="navbar_item">
+              <a href="photoGuide.html" class="navbar_links" id="guide-page">photo guide</a>
+            </li>
+            <li class="navbar_item active-page">
+              <a href="gallery.html" class="navbar_links1" id="showcase-page">gallery</a>
+            </li>
+            <li class="navbar_item">
+              <a href="shop.html" class="navbar_links1" id="shop-page">shop</a>
+            </li>
+            <li class="navbar_btn navbar_item">
+              <a href="enquiries.html" class="button" id="shop">enquiries</a>
+              <!-- <a href="contact.html" class="navbar_links" id="contact-page">Contact</a> -->
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="showcase_container">
+      <div class="bg"></div>
+      <div class="showcase_banner">
+          <h1>Here are examples of prints in all styles</h1>
+          <p>Pictures taken from my instagram @_printsbylisa</p>
+      </div> 
+      <div class="gallery2">
+        <a href="example1.jpg" class="img-1_2"></a>
+        <a href="example3.jpg" class="img-2_2"></a>
+        <a href="example2.jpg" class="img-3_2"></a>
+        <a href="example2.jpg" class="img-4_2"></a>
+        <a href="example1.jpg" class="img-5_2"></a>
+        <a href="example3.jpg" class="img-6_2"></a>
+        <a href="example3.jpg" class="img-7_2"></a>  
+        <a href="example2.jpg" class="img-8_2"></a>  
+      </div>
+    </div>
+    <div class="overlay"></div>
+</body>
+<script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector("nav")
+  const header_height = 25
+
+  const add_class_on_scroll = () => header.classList.add("scrolled")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled")
+
+  window.addEventListener('scroll', function() { 
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+
+  const openGalleyPicture = document.querySelectorAll("[data-gallery-target]")
+  const closeGalleyPicture = document.querySelectorAll("[data-gallery-close]")
+  const logo_img = document.getElementById('logo_img');
+
+  const navUL = document.getElementById('navbar-ul');
+  const hamburger = document.getElementById('hamburger');
+
+  hamburger.onclick = function(){
+    navUL.classList.toggle('show');
+    logo_img.classList.toggle('reposition');
+  }; 
+  
+</script>
+</html>

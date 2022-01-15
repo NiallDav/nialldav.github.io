@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>printsbyLisa</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+    </style>
+  </head>
+  <body>
+    
+    <nav id="navbar">
+        <div class="navbar_container">
+          <a href="#home" id="navbar_logo">
+            <img id="logo_img" src="printsbyLisa_logo.png" alt="printsbyLisa">
+          </a>
+          <a class="navbar_toggle" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <ul class="navbar_menu" id="navbar-ul">
+            <li class="navbar_item">
+              <a href="index.html" class="navbar_links" id="home-page">home</a>
+            </li>
+            <!-- <li class="navbar_item">
+              <a href="contact.html" class="navbar_links" id="contact-page">Contact</a>
+            </li> -->
+            <li class="navbar_item">
+              <a href="photoGuide.html" class="navbar_links" id="guide-page">photo guide</a>
+            </li>
+            <li class="navbar_item">
+              <a href="gallery.html" class="navbar_links" id="showcase-page">gallery</a>
+            </li>
+            <li class="navbar_item active-page">
+              <a href="shop.html" class="navbar_links" id="shop-page">shop</a>
+            </li>
+            <li class="navbar_btn navbar_item">
+              <a href="enquiries.html" class="button" id="shop">enquiries</a>
+              <!-- <a href="contact.html" class="navbar_links" id="contact-page">Contact</a> -->
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="shop_container">
+      <div class="bg"></div>
+      
+      <div class="gallery">
+          <a href="example1.jpg" class="img-1">
+            <div class="gallery_pic_desc">
+              <h1>style 3 - print</h1>
+              <p>this style is my fav and i love to ride rollercoasters sometimes!</p>
+            </div>
+          </a>
+        
+        
+        <a href="example3.jpg" class="img-2">
+            <div class="gallery_pic_desc">
+            <h1>style 2 - phone case</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes!</p>
+          </div>
+        </a>
+        
+        <a href="example2.jpg" class="img-3">
+          <div class="gallery_pic_desc">
+            <h1>style 1 - card</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes! yeah eyah eyahhhh  h kjdkdkdk hahahahh writing writing lots of writing more lines more lines testing more lines</p>
+          </div>
+        </a>
+        
+        <a href="example2.jpg" class="img-4">
+          <div class="gallery_pic_desc">
+            <h1>style 2 - phone case</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes!</p>
+          </div>
+        </a>
+        
+        <a href="example1.jpg" class="img-5">
+          <div class="gallery_pic_desc">
+            <h1>style 1 - card</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes! yeah eyah eyahhhh  h kjdkdkdk hahahahh writing writing lots of writing more lines more lines testing more lines</p>
+          </div>
+        </a> 
+      
+        <a href="example3.jpg" class="img-6">
+          <div class="gallery_pic_desc">
+            <h1>style 2 - phone case</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes!</p>
+          </div>
+        </a>
+        
+        <a href="example3.jpg" class="img-7">
+          <div class="gallery_pic_desc">
+            <h1>style 2 - phone case</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes!</p>
+          </div>
+        </a>  
+       
+        <a href="example2.jpg" class="img-8">
+          <div class="gallery_pic_desc">
+            <h1>style 1 - card</h1>
+            <p>this style is my fav and i love to ride rollercoasters sometimes! yeah eyah eyahhhh  h kjdkdkdk hahahahh writing writing lots of writing more lines more lines testing more lines</p>
+          </div>
+        </a>  
+        
+      </div>
+
+        <!-- <div class="insta_bg">
+            <div id="insta_container">
+                <div id="pixlee_container"></div>
+                <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'Gzbrk7jYNFsKXnEc84Zi'});Pixlee.addSimpleWidget({widgetId:'33484'});};</script>
+                <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+            </div>
+        </div> -->
+    </div>
+    <div class="shop_desc">
+      <h1>Each can be combined with a style</h1>
+      <p></p>
+    </div>
+    <div class="overlay"></div>
+</body>
+<script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector("nav")
+  const header_height = 25
+
+  const add_class_on_scroll = () => header.classList.add("scrolled")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled")
+
+  window.addEventListener('scroll', function() { 
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+
+  const openGalleyPicture = document.querySelectorAll("[data-gallery-target]")
+  const closeGalleyPicture = document.querySelectorAll("[data-gallery-close]")
+  
+  const navUL = document.getElementById('navbar-ul');
+        const hamburger = document.getElementById('hamburger');
+
+        hamburger.onclick = function(){
+          navUL.classList.toggle('show');
+        }; 
+</script>
+</html>
