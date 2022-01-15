@@ -247,8 +247,8 @@ nav.scrolled{
     }
   
     #s2{
-      background-image: url('/img/review1.jpg');
-      background:linear-gradient(rgba(201, 181, 168, 0.8), rgba(201, 181, 168, 0.8)), url("/img/review1.jpg");
+      background-image: url('review1.jpg');
+      background:linear-gradient(rgba(201, 181, 168, 0.8), rgba(201, 181, 168, 0.8)), url("review1.jpg");
       background-size: cover;
       background-size: 100%;
       background-position: 50% 60%;
@@ -256,15 +256,15 @@ nav.scrolled{
     }
 
     #s3{
-        background-image: url('/img/review2.jpg');
-        background:linear-gradient(rgba(201, 181, 168, 0.8), rgba(201, 181, 168, 0.8)), url("/img/review2.jpg");
+        background-image: url('review2.jpg');
+        background:linear-gradient(rgba(201, 181, 168, 0.8), rgba(201, 181, 168, 0.8)), url("review2.jpg");
         background-size: cover;
         background-position: 50% 30%;
     }
 
     #s4{
-        background-image: url('/img/review3.jpg');
-        background:linear-gradient(rgba(201, 181, 168, 0.8), rgba(201, 181, 168, 0.8)), url("/img/review3.jpg");
+        background-image: url('review3.jpg');
+        background:linear-gradient(rgba(201, 181, 168, 0.8), rgba(201, 181, 168, 0.8)), url("review3.jpg");
         background-size: cover;
         background-position: 50% 20%;
     }
@@ -360,7 +360,7 @@ nav.scrolled{
 }
 
 .pic1{
-    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/img/photos/friends_gallery.jpg");
+    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("photos/friends_gallery.jpg");
     background-size:cover;
     background-position:center;
     border: 3px solid rgba(0, 0, 0, 0.5);
@@ -378,7 +378,7 @@ nav.scrolled{
 }
 
 .pic2{
-    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/img/photos/style2_example.jpg");
+    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("photos/style2_example.jpg");
     background-size:cover;
     background-position:center;
     border: 3px solid rgba(0, 0, 0, 0.5);
@@ -395,7 +395,7 @@ nav.scrolled{
 }
 
 .pic3{
-    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/img/photos/couple_gallery.jpg");
+    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("photos/couple_gallery.jpg");
     background-size:cover;
     background-position:center;
     border: 3px solid rgba(0, 0, 0, 0.5);
@@ -572,7 +572,7 @@ nav.scrolled{
 }
 
 .pic1:hover{
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/img/photos/friends_gallery.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("photos/friends_gallery.jpg");
     background-size:cover;
     background-position:center;
     border: 3px solid black;
@@ -588,7 +588,7 @@ nav.scrolled{
 }
 
 .pic2:hover{
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/img/photos/style2_example.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("photos/style2_example.jpg");
     background-size:cover;
     background-position:center;
     border: 3px solid black;
@@ -604,7 +604,7 @@ nav.scrolled{
 }
 
 .pic3:hover{
-    background:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/img/photos/couple_gallery.jpg");
+    background:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("photos/couple_gallery.jpg");
     background-size:cover;
     background-position:center;
     border: 3px solid black;
@@ -1222,43 +1222,43 @@ textarea:focus{
 .img-1{
       grid-area: img-1;
       /* min-height: 51.5rem; */
-      background-image: url("/img/photos/2girls_gallery_print.jpg");
+      background-image: url("photos/2girls_gallery_print.jpg");
   }
 
 .img-2{
     grid-area: img-2;
-    background-image: url("/img/photos/phonecaseCatty_cropped.jpg");
+    background-image: url("photos/phonecaseCatty_cropped.jpg");
 }
 
 .img-3{
     grid-area: img-3;
-    background-image: url("/img/example3.jpg");
+    background-image: url("example3.jpg");
 }
 
 .img-4{
     grid-area: img-4;
-    background-image: url("/img/example2.jpg");
+    background-image: url("example2.jpg");
 }
 
 .img-5{
     grid-area: img-5;
-    background-image: url("/img/example1.jpg");
+    background-image: url("example1.jpg");
 }
 
 .img-6{
     grid-area: img-6;
     /* min-height: 51.5rem; */
-    background-image: url("/img/example2.jpg");
+    background-image: url("example2.jpg");
 }
 
 .img-7{
     grid-area: img-7;
-    background-image: url("/img/example1.jpg");
+    background-image: url("example1.jpg");
 }
 
 .img-8{
     grid-area: img-8;
-    background-image: url("/img/example3.jpg");
+    background-image: url("example3.jpg");
 }
 
 .picture{
@@ -1334,35 +1334,35 @@ textarea:focus{
 
   .img-1_2{
     grid-area: img-1;
-    background-image: url("/img/photos/2girls_gallery_print.jpg");
+    background-image: url("photos/2girls_gallery_print.jpg");
 }
 .img-2_2{
     grid-area: img-2;
-    background-image: url("/img/photos/woman with baby2_gallery.jpg");
+    background-image: url("photos/woman with baby2_gallery.jpg");
 }
 .img-3_2{
     grid-area: img-3;
-    background-image: url("/img/photos/friends_river_gallery.jpg");
+    background-image: url("photos/friends_river_gallery.jpg");
 }
 .img-4_2{
     grid-area: img-4;
-    background-image: url("/img/photos/indie.jpg");
+    background-image: url("photos/indie.jpg");
 }
 .img-5_2{
     grid-area: img-5;
-    background-image: url("/img/photos/couple2_gallery.jpeg");
+    background-image: url("photos/couple2_gallery.jpeg");
 }
 .img-6_2{
     grid-area: img-6;
-    background-image: url("/img/photos/couple3_gallery.jpeg");
+    background-image: url("photos/couple3_gallery.jpeg");
 }
 .img-7_2{
     grid-area: img-7;
-    background-image: url("/img/photos/2people and dog_gallery.jpg");
+    background-image: url("photos/2people and dog_gallery.jpg");
 }
 .img-8_2{
     grid-area: img-8;
-    background-image: url("/img/photos/family_gallery.jpg");
+    background-image: url("photos/family_gallery.jpg");
 }
 
 /*----------------------ALL MEDIA QUERIES BELOW----------------------*/
@@ -1653,7 +1653,7 @@ textarea:focus{
     }
 
     .pic3:hover{
-        background:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/img/example3.jpg");
+        background:linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("example3.jpg");
         background-size:cover;
         background-position:center;
         border: 3px solid black;
@@ -1927,35 +1927,35 @@ textarea:focus{
 
     .img-1_2{
         grid-area: img-1;
-        background-image: url("/img/photos/2girls_gallery_print.jpg");
+        background-image: url("photos/2girls_gallery_print.jpg");
     }
     .img-2_2{
         grid-area: img-2;
-        background-image: url("/img/photos/woman with baby2_gallery.jpg");
+        background-image: url("photos/woman with baby2_gallery.jpg");
     }
     .img-3_2{
         grid-area: img-3;
-        background-image: url("/img/photos/friends_river_gallery.jpg");
+        background-image: url("photos/friends_river_gallery.jpg");
     }
     .img-4_2{
         grid-area: img-4;
-        background-image: url("/img/photos/indie.jpg");
+        background-image: url("photos/indie.jpg");
     }
     .img-5_2{
         grid-area: img-5;
-        background-image: url("/img/photos/couple2_gallery.jpeg");
+        background-image: url("photos/couple2_gallery.jpeg");
     }
     .img-6_2{
         grid-area: img-6;
-        background-image: url("/img/photos/couple3_gallery.jpeg");
+        background-image: url("photos/couple3_gallery.jpeg");
     }
     .img-7_2{
         grid-area: img-7;
-        background-image: url("/img/photos/2people and dog_gallery.jpg");
+        background-image: url("photos/2people and dog_gallery.jpg");
     }
     .img-8_2{
         grid-area: img-8;
-        background-image: url("/img/photos/family_gallery.jpg");
+        background-image: url("photos/family_gallery.jpg");
     }
 
 }
