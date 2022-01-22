@@ -16,7 +16,7 @@
   <body>
     <nav id="navbar">
         <div class="navbar_container">
-          <a href="#home" id="navbar_logo">
+          <a href="index.html" id="navbar_logo">
             <img id="logo_img" src="printsbyLisa_logo.png" alt="printsbyLisa">
           </a>
           <a class="navbar_toggle" id="hamburger">
@@ -29,7 +29,7 @@
               <a href="index.html" class="navbar_links" id="home-page">home</a>
             </li>
             <!-- <li class="navbar_item">
-              <a href="contact.html" class="navbar_links" id="contact-page">Contact</a>
+              <a href="contact.html" class="navbar_links" id="contact-page">contact</a>
             </li> -->
             <li class="navbar_item">
               <a href="photoGuide.html" class="navbar_links" id="guide-page">photo guide</a>
@@ -37,9 +37,9 @@
             <li class="navbar_item">
               <a href="gallery.html" class="navbar_links" id="showcase-page">gallery</a>
             </li>
-            <li class="navbar_item">
+            <!-- <li class="navbar_item">
               <a href="shop.html" class="navbar_links" id="shop-page">shop</a>
-            </li>
+            </li> -->
             <li class="navbar_btn navbar_item active-page">
               <a href="enquiries.html" class="button" id="shop">enquiries</a>
               <!-- <a href="contact.html" class="navbar_links" id="contact-page">Contact</a> -->
@@ -54,7 +54,7 @@
       <div class="bg"></div>
         <div class="order_container">
             <div id="order_title">
-                <h1>Order form</h1>
+                <h1>Enquiries</h1>
                 <p>Tell me about your order!</p>
             </div>
             <div class="forms">
@@ -119,30 +119,6 @@
         </div>
     </div>
     </div>
-    <script>
-      let scrollpos = window.scrollY
-      const header = document.querySelector("nav")
-      const header_height = 25
-    
-      const add_class_on_scroll = () => header.classList.add("scrolled")
-      const remove_class_on_scroll = () => header.classList.remove("scrolled")
-    
-      window.addEventListener('scroll', function() { 
-        scrollpos = window.scrollY;
-    
-        if (scrollpos >= header_height) { add_class_on_scroll() }
-        else { remove_class_on_scroll() }
-    
-        console.log(scrollpos)
-      })
-
-      const navUL = document.getElementById('navbar-ul');
-        const hamburger = document.getElementById('hamburger');
-
-        hamburger.onclick = function(){
-          navUL.classList.toggle('show');
-        }; 
-
-      
-    </script>
+    <script src="constants.js"></script>
   </body>
+  </html>

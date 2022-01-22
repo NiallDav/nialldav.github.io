@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <!-- <script src="script.js"></script> -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
@@ -18,7 +17,7 @@
   <body>
     <nav id="navbar">
       <div class="navbar_container">
-        <a href="#home" id="navbar_logo">
+        <a href="index.html" id="navbar_logo">
           <img id="logo_img" src="printsbyLisa_logo.png" alt="printsbyLisa">
         </a>
         <a class="navbar_toggle" id="hamburger">
@@ -36,9 +35,9 @@
           <li class="navbar_item">
             <a href="gallery.html" class="navbar_links" id="showcase-page">gallery</a>
           </li>
-          <li class="navbar_item">
+          <!-- <li class="navbar_item">
             <a href="shop.html" class="navbar_links" id="shop-page">shop</a>
-          </li>
+          </li> -->
           <li class="navbar_btn navbar_item">
             <a href="enquiries.html" class="button" id="shop">enquiries</a>
             <!-- <a href="contact.html" class="navbar_links" id="contact-page">Contact</a> -->
@@ -47,17 +46,7 @@
       </div>
     </nav>
     <main class="main_container">
-      <!-- <div class="bgColourContainer">
-        <div class="bgColour">
-          <img src="img/bgColour.jpg" alt="background">
-        </div>
-      </div> -->
-      <!-- <div class="bg">
-        <img id="bgimg" src="img/bg.jpg" alt="background">
-      </div> -->
       <div class="bg"></div>
-
-
       <div class="container">
         <div class="carousel">
           <div class="slider">
@@ -72,34 +61,34 @@
             </section>
             <section id="s2">
               <div class="review">
-                <p>“Really good customer service and so talented at what you do. My boyfriend loves it so much.”</p>
-                <h1>Macy Szabo</h1>
+                <p class="reviewText">“Really good customer service and so talented at what you do. My boyfriend loves it so much.”</p>
+                <h1 class="customerName">Macy Szabo</h1>
                 <a href="orders.html" class="buttonShop" id="shop">SHOP</a>
               </div>
             </section>
             <section id="s3">
               <div class="review">
-                <p>“I’ve had 4 different prints from you and they’ve all been perfect😊 thank you!”</p>
-                <h1>Caitlin Leigh</h1>
+                <p class="reviewText">“I’ve had 4 different prints FROM you <span class="capital">lisa</span> and they’ve all been perfect😊 thank you!”</p>
+                <h1 class="customerName">Caitlin Leigh</h1>
                 <a href="orders.html" class="buttonShop" id="shop">SHOP</a>
               </div>
             </section>
             <section id="s4">
               <div class="review">
-                <p>“I was late in getting my order in for Mother’s Day but Lisa made sure it was done and sent in time. Lisa’s service is great with good communication to ensure the picture is perfect. Highly recommend, I have already been in touch to get another picture done!” </p>
-                <h1>Catriona Young</h1>
+                <p class="reviewText">“I was late in getting my order in for Mother’s Day but <span class="capital">lisa</span> made sure it was done and sent in time. <span class="capital">lisa</span>’s service is great with good communication to ensure the picture is perfect. Highly recommend, I have already been in touch to get another picture done!” </p>
+                <h1 class="customerName">Catriona Young</h1>
                 <a href="orders.html" class="buttonShop" id="shop">SHOP</a>
               </div>
             </section>
           </div>
           <div class="control">
             <span class="arrow left">
-              <i class="material-icons">
+              <i class="material-icons arrow">
               keyboard_arrow_left
               </i>
             </span>
             <span class="arrow right">
-              <i class="material-icons">
+              <i class="material-icons arrow">
               keyboard_arrow_right
               </i>
             </span>
@@ -113,47 +102,6 @@
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-      
-      <!-- <div class="slider">
-        <div class="slides">
-          <div class="slide1"> -->
-            <!-- <div class="tagline_con">
-              <div class="tagline"> -->
-                <!-- <h1> <span id="highlight">personalised</span> prints, phone cases and cards</h1>
-                <p>free uk delivery</p>
-                <a href="orders.html" class="buttonShop" id="shop">SHOP</a> -->
-              <!-- </div>
-            </div> -->
-          <!-- </div>
-          <div class="slide2">
-            <p>this was really good thanks</p>
-            <h1>john adams</h1>
-          </div>
-          <div class="slide3">
-            <p>this wasnt really good no thanks</p>
-            <h1>henry adams</h1>
-          </div>
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="orders_background">
-        <div id="orders">
-          <h1>Orders are currently open!</h1>
-          <p>To order your own personalised print press the 'Shop' button at the top of the page</p>
-        </div>
-      </div> -->
       <div class="print_desc">
         <h1 id="h1_desc">3 styles available for personalised prints, cards and phone cases</h1>
       </div>
@@ -189,8 +137,11 @@
         <div class="about_container">
           <div class="writing_block">
             <div class="about_writing">
-              <h1>Hi I'm Lisa..</h1>
-              <p id="para"> Did you know that.. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusamus assumenda quia earum voluptates accusantium harum temporibus, eligendi maiores rerum laudantium et blanditiis libero laborum culpa nulla esse velit suscipit aliquid sit cumque? Provident, accusantium consequatur blanditiis eos quidem ex consequuntur non cumque culpa illo nulla vitae tenetur totam repellendus reprehenderit nostrum quis magnam. Voluptates, dolore labore! Aspernatur neque sapiente rerum modi iste illum quas fugit necessitatibus. Magni ullam eaque repellat eius, nisi dolores. Natus, velit quidem tempora dolore expedita iusto dolorem quis aut aliquid perferendis architecto voluptatum facere dicta repellendus animi! Aliquam minus distinctio ipsam qui minima pariatur dolor.</p>
+              <h1>hi i'm <span class="capital">lisa</span></h1>
+              <p id="para">i am a 21 year old who, after creating vector art for a friend as a one off (or so i thought), found that i had
+              a love for it - not only for the creation of these prints but for the joy i am able to give to my customers through my prints. each print is personalised 
+              and so often has great sentimental value which i am so grateful to be able to gift to others. <br> <br> i spend a lot of time on each print and each one will 
+              reflect the high quality of work i want 'printsby<span class="capital">lisa</span>' to be known for.</p>
             </div>
           </div>
           <div class="about_pic">
@@ -208,128 +159,6 @@
         </div>
       </div>
       </main>
-      
-      <script>
-        let scrollpos = window.scrollY
-        const header = document.querySelector("nav")
-        const header_height = 25
-      
-        const add_class_on_scroll = () => header.classList.add("scrolled")
-        const remove_class_on_scroll = () => header.classList.remove("scrolled")
-      
-        window.addEventListener('scroll', function() { 
-          scrollpos = window.scrollY;
-      
-          if (scrollpos >= header_height) { add_class_on_scroll() }
-          else { remove_class_on_scroll() }
-      
-          console.log(scrollpos)
-        })
-
-        /*carousel*/
-        const left = document.querySelector('.left');
-        const right = document.querySelector('.right');
-
-        // const slider = document.querySelector('.slider');
-
-        // const indicatorParent = document.querySelector('.control ul'); 
-        // const indicators = document.querySelectorAll('.control li');
-        // index = 0;
-
-        // indicators.forEach((indicator, i) => {
-        // indicator.addEventListener('click', () => {
-        //   document.querySelector('.control .selected').classList.remove('selected');
-        //   indicator.classList.add('selected');
-        //   slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
-        //   index = i;
-    
-        //   });
-        // });
-
-        left.addEventListener('click', function() {
-          index--;
-          if(index < 0){
-            index=3
-          }
-          document.querySelector('.control .selected').classList.remove('selected');
-          indicatorParent.children[index].classList.add('selected');
-          slider.style.transform = 'translateX(' + (index) * -25 + '%)';
-        });
-
-        right.addEventListener('click', function() {
-          // index = (index < 4 - 1) ? index+1 : 3;
-          index++;
-          if(index > 3){
-            index=0
-          }
-          document.querySelector('.control .selected').classList.remove('selected');
-          indicatorParent.children[index].classList.add('selected');
-          slider.style.transform = 'translateX(' + (index) * -25 + '%)';
-        });
-        
-          
-
-
-
-        index = 1;
-        const slider = document.querySelector(".slider")
-        const indicatorParent = document.querySelector('.control ul'); 
-        const indicators = document.querySelectorAll('.control li');
-      
-        
-        setInterval(function(){
-          slider.style.transform = 'translateX(' + (index) * -25 + '%)';
-          index++;
-          document.querySelector('.control .selected').classList.remove('selected');
-          indicatorParent.children[index-1].classList.add('selected');
-          if(index > 3){
-            index=0;
-          }
-        }, 10000);
-
-
-        // const slider = document.querySelector('.slider');
-
-        // const indicatorParent = document.querySelector('.control ul'); 
-        // const indicators = document.querySelectorAll('.control li');
-        // index = 0; 
-
-        // var intervalId = window.setInterval(function(){
-        //   indicators.forEach((indicator, i) => {
-        //     i=index+1;
-        //     // if(index > 3){
-        //     // index=0
-        //     // }
-        //     document.querySelector('.control .selected').classList.remove('selected');
-        //     indicator.classList.add('selected');
-        //     slider.style.transform = 'translateX(' + (i) * -25 + '%)';  
-        //     })
-        // }, 5000);
-
-
-        /*autoplay carousel*/
-
-        // var counter = 1;
-        // setInterval(function(){
-        //   document.getElementById("slide" + counter).checked =true;
-        //   counter++;
-        //   if(counter > 3){
-        //     counter=1;
-        //   }
-        // },5000);
-
-        
-        const navUL = document.getElementById('navbar-ul');
-        const hamburger = document.getElementById('hamburger');
-        const logo_img = document.getElementById('logo_img');
-
-        hamburger.onclick = function(){
-          navUL.classList.toggle('show');
-          logo_img.classList.toggle('reposition');
-        }; 
-
-        
-      </script>
-
+      <script src="indexScript.js"></script>
     </body>
   </html>
