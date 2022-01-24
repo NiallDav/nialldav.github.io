@@ -56,7 +56,7 @@
 
 #navbar{
     /* background: #f5f2ed; */
-    height: 89px;
+    height: 90px;
     display: flex;
     display: flex;
     justify-content: center;
@@ -80,7 +80,7 @@ nav.scrolled{
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin: 15px auto 0 auto;
+    margin: 0 auto 0 auto;
     padding: 0px 50px;
 }
 
@@ -110,7 +110,7 @@ nav.scrolled{
     align-items: center;
     list-style: none;
     /* border-bottom: 1px solid #ac9c8d; */
-    height: 60px;
+    height: 55px;
     margin-top: 10px;
 }
 
@@ -218,7 +218,7 @@ nav.scrolled{
     }
     .container {
         width: 100%;
-        margin:20px 0;
+        margin:0 0 20px 0;
     }
     .carousel {
         height: 400px;
@@ -754,6 +754,7 @@ nav.scrolled{
     font-size: 2.5vw;
     color: #5f5240;
     margin-top: 50px;
+    font-size: 50px;
 }
 
 .guide_content h2{
@@ -763,17 +764,20 @@ nav.scrolled{
     padding: 5px 8px;
     margin-bottom: 10px;
     font-weight: 900;
+    font-size: 30px;
 }
 
 .guide_content p{
     color: #665741;
     font-weight: 900;
+    font-size: 22px;
 }
 
 .guide_content li{
     list-style:circle;
     margin-bottom: .5vw;
     color: #61594e;
+    font-size: 20px;
 }
 
 .guide_content{
@@ -783,11 +787,14 @@ nav.scrolled{
     max-width: 1500px;
     margin: auto;
     font-size: 1vw;
+    align-items: center;
 }
 
 .guide_content img{
     width: 25vw;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .guide_content ul{
