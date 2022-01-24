@@ -1904,7 +1904,6 @@ textarea:focus{
     }
 
     /*---------------------------PHOTO GUIDE------------------------------*/
-
     .pguideContainer{
         
     }
@@ -1921,7 +1920,6 @@ textarea:focus{
         padding: 5px 8px;
         margin-bottom: 10px;
         font-weight: 900;
-
         margin: 0 auto;
         font-size: 3vw;
     }
@@ -1929,7 +1927,6 @@ textarea:focus{
     .guide_content p{
         color: #665741;
         font-weight: 900;
-        
         font-size: 2.5vw;
         margin: 1vw 0;
     }
@@ -1938,7 +1935,6 @@ textarea:focus{
         list-style:circle;
         margin-bottom: .5vw;
         color: #61594e;
-
         font-size: 2vw;
     }
     
@@ -1965,9 +1961,32 @@ textarea:focus{
 
     /*ENQUIRIES*/
     
-    
-  
+    #name, #email, #message{
+        width: 95%;
+    }
 
+    .order_container{
+        height: auto;
+    }
+
+    .order_description{
+        height: auto;
+    }
+
+    /* #examples_listOrder{
+        font-size: 4vw;
+    } */
+  
+    #printsBelow{
+        position: unset;
+        margin-top: 2vw;
+    }
+
+    .background2{
+        position: relative;
+        top: 0;
+        height: auto;
+    }
 
 
     /*-------GALLERY-------*/
