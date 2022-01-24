@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>printsbyLisa</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <script src="scripts.js"></script> -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+    </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="navbar_container">
+                <a href="#home" id="navbar_logo">
+                <img id="logo_img" src="/img/printsbyLisa_logo.png" alt="printsbyLisa">
+                </a>
+                <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <!-- <li class="navbar_item">
+                    <a href="contact.html" class="navbar_links" id="contact-page">Contact</a>
+                </li> -->
+                <li class="navbar_item">
+                    <a href="showcase.html" class="navbar_links" id="showcase-page">Showcase</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="enquiries.html" class="button" id="shop">Enquiries</a>
+                    <!-- <a href="contact.html" class="navbar_links" id="contact-page">Contact</a> -->
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            
+            <div class="contact_background">
+                <!-- <div class="bg">
+                    <img id="bgimg" src="img/bg.jpg" alt="background">
+                  </div> -->
+                    <div class="bg"></div>
+                    <div class="contact_description">
+                        <h1>Any questions regarding potential prints?</h1>
+                        <br>
+                    </div>
+                    <div id="examples_list">
+                        <p id="bold">For example</p>
+                        <ul>
+                            <li>would  this picture be suitable?</li>
+                            <li>do you do prints of animals?</li>
+                            <li>can I order multiple prints?</li>
+                        </ul>
+                    </div>
+                <div class="contact_container">
+                    <div id="contact_title">
+                        <h1>Contact</h1>
+                        <p>If you have any questions, please let me know here</p>
+                    </div>
+                    <form class="contact_form" action="contactform.php" method="post">
+                            <input type="text" class="formBox" name="name" placeholder="Full Name">
+                            <br>    
+                            <input type="text" class="formBox" name="email" placeholder="Email">
+                            <br>
+                            <input type="text" class="formBox" name="subject" placeholder="Subject">
+                            <br>
+                            <textarea name="message" id="message" for="message" placeholder="Message" style="resize:none;" rows="1" cols="20"></textarea>
+                            <br>
+                            <label for="myfile">Select your image(s)</label>
+                            <input type="file" class="hidden" id="myfile" name="myfile" multiple>
+                            <br>
+                            <button type="submit" value="send" id="button">Submit</button>
+                            <br>
+                        </form>
+                    </div>
+                    
+                  
+              </div>
+        </main>
+
+    </body>
+</html>
