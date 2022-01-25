@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"  onclick="jump()">
+  <head>
+    <meta charset="utf-8">
+    <title>Let's Play</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;900&display=swap');
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="nav_container">
+            <a  href="index.html">
+                <img class="logo" src="LOREM.png" alt="">
+            </a>
+            
+            <div class="nvbrcnt">
+                <div class="nav_links" id="navUL">
+                    <a href="index.html">HOME</a>
+                    <a href="play.html">PLAY</a>
+                    <a href="learn.html">LEARN</a>
+                </div>
+            </div>
+            <div class="navbar_toggle">
+                <a id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="bg2 hidden"></div>
+        <div class="play_vid_cnt">
+            <video class="play_vid" id="playVid" autoplay loop>
+                <source src="SpinRender_1.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div>
+            <a href="#gameJump" id="enter" class="play_title">ENTER THE GAME</a>
+        </div>
+
+        <div class="game hidden" id="gameJump">
+            
+            <p>Score: <span id="scoreSpan">0</span></p>
+            <p>High Score: <span id="highScore">0</span></p>
+            <div id="character"></div>
+            <div id="balloon"></div>
+        </div>
+        
+
+
+            
+        </div>
+    </main>
+    
+
+</body>
+<script src="game.js"></script>
+</html>

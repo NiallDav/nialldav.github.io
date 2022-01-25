@@ -4,11 +4,14 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 html{
     background-color: black;
     z-index: -50;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
 }
 
 .navbar{
@@ -17,7 +20,7 @@ html{
     top: 0;
     width: 100%;
     height: 80px;
-    background-color:rgba(0, 0, 0, 0.24);
+    background-color:rgba(0, 0, 0, 0.5);
     z-index: 100;
 }
 
@@ -32,51 +35,115 @@ html{
 }
 
 .nav_links{
-    display: none;
-    margin-top: 50px;
-    margin-left: 470px;
+    display:inline-block;
+    margin: auto 7% auto 0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    justify-content: space-around;
+    width: 0%;
+    height: 50%;
+    /* height: 100%; */
+    /* background-color: #27182f; */
+
+    margin-right: 200px;
+
+    overflow:hidden;
+    white-space:nowrap;
+    
+    
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 
 .nvbrcnt{
     /* position: absolute; */
     /* left: 0; */
     /* justify-content: right; */
+    right: 0;
     margin: 0;
+    max-width: 1600px;
+    width: 55%;
+
+    display:inline-block;
+    
 }
 
-.show{
+/* .show{
     text-align: center;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.411);
-    padding:50px 50px 50px 50px;
+    background-color: rgb(231, 20, 20);
+    padding:50px;
     z-index: 10;
     border-radius: 50px;
     transition: .2s;
+    width: 50vw;
+    height: 90vw;
+} */
+
+.show{
+    margin-top: 0;
+    text-align: center;
+    display: inline-block;
+    /* flex-direction: column; */
+    /* position: absolute;
+    top: -40px; */
+
+    margin-right: 200px;
+
+    background-color: #27182f;
+    
+    /* padding: 0px; */
+    z-index: 10;
+    border-radius: 5vw;
+    width: 50%;
+    height: 50%;
+
+    
+
+    -webkit-transition: all 1s ease-out;
+-moz-transition: all 1s ease-out;
+-o-transition: all 1s ease-out;
+transition: all 1s ease-out;
 }
 
 .nav_links a{
+    display: inline-flex;
     text-decoration: none;
     color:white;
-    margin: 50px 50px;
+    align-items: center;
+    margin: auto 3vw;
+    font-size: 1.4vw;
+    font-weight: 900;
+    height: 100%;
+    transition: .2s;
+}
+
+.nav_links a:hover {
+    color:#8e59a8;
+    transition: .2s;
 }
 
 .navbar_toggle{
     display: block;
     cursor: pointer;
+    z-index: 25;
 }
 
 .navbar_toggle .bar{
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
     background: #8e59a8;
     display: block;
     cursor: pointer;
-    
+    pointer-events: none;
 }
 
 .logo{
@@ -130,6 +197,7 @@ html{
     font-size: 23px;
     font-weight: 400;
     color:rgb(113, 64, 138);
+    text-align: left;
 }
 
 .playbtn{
@@ -281,6 +349,7 @@ html{
     /* font-size: 1.2vw; */
     font-size: 22.5px;
     font-family: "Source Sans Pro";
+    text-align: left;
 }
 
 .PYR_repo2{
@@ -418,7 +487,236 @@ html{
     margin: 20px;
 }
 
+/*---------------------------PLAY.HTML------------------------------*/
+
+.hidden{
+    display: none;
+    opacity: 0%;
+    transition: 0.5s;
+    
+}
+
+.show{
+    visibility: visible;
+    transition: 1s;
+    
+}
+
+.bg2{
+    position: relative;
+    top: 0;
+    z-index: 0;
+    background:
+        linear-gradient(rgb(57, 23, 88) , transparent),
+        linear-gradient(to top left, rgb(16, 119, 16), transparent),
+        linear-gradient(to top right, rgb(77, 8, 35), transparent),
+        linear-gradient(to top, rgb(0, 0, 0), transparent),
+        rgba(0, 0, 0, 0.438)
+        linear-gradient(to top, rgb(0, 0, 0), transparent);  
+    background-blend-mode:multiply;
+    height: 800px;
+    /* height: auto; */
+    width: auto;
+}
+
+.play_vid_cnt{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.play_vid{
+    /* width: 50vw; */
+    /* height: 50vw; */
+    object-fit: cover;
+}
+
+.play_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    text-shadow: 0.03em 0 0 rgba(255, 0, 0, 0.75),
+    -0.015em -0.02em 0 rgba(0, 4, 255, 0.75),
+    0.015em 0.03em 0 rgba(0, 255, 0, 0.75);
+    cursor: pointer;
+    text-decoration: none;
+    /* font-family: 'Open Sans Condensed'; */
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 0 10px;
+}
+
+/* #character {
+    height: 50px;
+    width: 50px;
+    background: url(run_sprite.png) 0px 0px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position:relative;
+  } */
+
+  .game{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin: 0 auto 200px auto;
+    background-color: rgba(38, 20, 48, 0.158);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.counter{
+    color: white;
+}
+
+.game p{
+    color:white;
+}
+
+#character{
+    width: 45px;
+    height: 45px;
+    background: url(run_sprite.png) 0px 0px;
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump .3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    50%{top: 100px;}
+    /* 70%{top: 100px;} */
+    100%{top: 150px;}
+}
+
+#balloon{
+    background: url(balloon.png);
+    width: 14px;
+    height: 17px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
+
+/*-------------------LEARN----------------------*/
+
+.learnTitle{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 200px auto 50px auto;
+    color: white;
+    font-size: 4vw;
+    width: 100%;
+    z-index: 1;
+}
+
+.learnImg{
+    position: absolute;
+    margin-top: 150px;
+    top: 20vw;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 1;
+    opacity: 30%;
+}
+
+.popupCont{
+    position: absolute;
+    top: 20vw;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* max-width: 1600px; */
+    align-items: center;
+    width: 100vw;
+}
+
+.popup{
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 40%;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    font-size: 1.3vw;
+}
+
+.popupTitle{
+    font-size: 2vw;
+}
+
+.bg3{
+    position: absolute;
+    z-index: -10;
+    background:
+        linear-gradient(rgb(57, 23, 88) , transparent),
+        linear-gradient(to top left, rgb(16, 119, 16), transparent),
+        linear-gradient(to top right, rgb(77, 8, 35), transparent),
+        linear-gradient(to top, rgb(0, 0, 0), transparent),
+        rgba(0, 0, 0, 0.438)
+        linear-gradient(to top, rgb(0, 0, 0), transparent);
+        
+    background-blend-mode:multiply;
+    height: 50vw;
+    /* height: auto; */
+    width: 100%;
+}
+
+.colouredText{
+    color:rgb(65, 39, 99);
+}
+
 @media screen and (max-width:1410px){
+.nav_links{
+    margin-right: 9%;
+}
+
+.show{
+    margin-right: 10%;
+    width: 50%;
+}
+
+.nav_links a{
+    font-size: 2.5vw;
+}
+    
 
     .bg{
         /* height: 3050px; */
@@ -474,7 +772,15 @@ html{
     }
 
     .shotgun{
-        bottom: 48%;
+        object-fit: cover;
+        position: unset;
+    }
+
+    .shotgun_container{
+        width: 100vw;
+        position: absolute;
+        left: -18vw;
+        bottom: -20px;
     }
 
     .NLG_para{
@@ -489,10 +795,19 @@ html{
     }
 
     .kayle{
+        object-fit: cover;
+        position: unset;
+        width: 62vw;
+        z-index: -1;
+    }
+
+    .kayle_container{
         position: absolute;
-        top: -8%;
-        left: 30%;
-        width: 80%;
+        overflow: hidden;
+        top: -0%;
+        left: 35%;
+        height: auto;
+        width: 62vw;
         z-index: -1;
     }
 
@@ -501,7 +816,7 @@ html{
         left: 55%;
         height: 40vw;
         width: 40vw;
-        z-index: -1;
+       
     }
 
     .PYR_title{
@@ -578,6 +893,69 @@ html{
     .socials{
         height: 7vw;
     }
+
+
+.bg3{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    background:
+        linear-gradient(rgb(57, 23, 88) , transparent),
+        linear-gradient(to top left, rgb(16, 119, 16), transparent),
+        linear-gradient(to top right, rgb(77, 8, 35), transparent),
+        linear-gradient(to top, rgb(0, 0, 0), transparent),
+        rgba(0, 0, 0, 0.438)
+        linear-gradient(to top, rgb(0, 0, 0), transparent);
+        
+    background-blend-mode:multiply;
+    height: 60vw;
+    /* height: auto; */
+    width: 100%;
+}
+
+
+.popupCont{
+    position: unset;
+    left: 0;
+    margin-top: 170px;
+    -webkit-transform: unset;
+    transform: unset;
+    /* position: absolute;
+    top: 20vw;
+    left: 50%;
+    margin: 100px auto 0 auto;*/
+    display: flex; 
+    flex-direction: column;
+    /* max-width: 1600px;
+    align-items: center;
+    width: 100vw; */
+}
+
+.learnTitle{
+    margin-top:120px;
+    margin-bottom: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 6vw;
+    width: 90%;
+}
+
+.popup{
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.671);
+    width: 80%;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.popupTitle{
+    font-size: 4vw;
+}
+
+
 }
 
 @media screen and (max-width:500px){
