@@ -159,3 +159,11 @@ for(var p=0; p<text.length; p++){
 // console.log(document.body.innerText.toLowerCase());
 
 // console.log(allText.replace(/lisa/g, "Lisa"));
+
+
+document.onclick = function(e){
+  if(e.target !== hamburger){
+      navUL.classList.remove("show");
+      logo_img.classList.remove('reposition');
+  }
+}
