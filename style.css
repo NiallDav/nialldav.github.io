@@ -252,9 +252,10 @@ transition: all 1s ease-out;
 
 .shotgun{
     position: relative;
-    bottom: 50%;
-    width: 115%;
-    left: -12%;
+    bottom: 8vw;
+    /* width: 1800px; */
+    width: 100vw;
+    left: -3vw;
 }
 
 /* .shotgun{
@@ -348,10 +349,10 @@ transition: all 1s ease-out;
 }
 
 .kayle{
-    width: 100%;
+    width: 80%;
     position: absolute;
-    left: 150px;
-    top: -50px;
+    left: 300px;
+    top: 50px;
     z-index: -1;
     /* z-index: 2; */
 }
@@ -745,7 +746,7 @@ p{
 }
 
 .colouredText{
-    color:rgb(65, 39, 99);
+    color:#8e59a8;
 }
 
 @media screen and (max-width:1410px){
@@ -818,7 +819,11 @@ p{
 
     .shotgun{
         object-fit: cover;
-        position: unset;
+        position: relative;
+        width: 102vw;
+        bottom: 30px;
+        left: 100px;
+
     }
 
     .shotgun_container{
