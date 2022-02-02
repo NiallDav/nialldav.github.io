@@ -252,10 +252,22 @@ transition: all 1s ease-out;
 
 .shotgun{
     position: relative;
-    bottom: 8vw;
+    bottom: 3vw;
     /* width: 1800px; */
-    width: 100vw;
+    width: 102vw;
     left: -3vw;
+    max-width: 1800px;
+}
+
+@media screen and (max-width:1630px){
+    .shotgun{
+        position: relative;
+        bottom: 5vw;
+        /* width: 1800px; */
+        width: 105vw;
+        left: -6vw;
+        max-width: 1800px;
+    }
 }
 
 /* .shotgun{
@@ -337,7 +349,7 @@ transition: all 1s ease-out;
 .moon{
     position: relative;
     top: -100px;
-    left: 47%;
+    left: 45%;
     max-height: 900px;
     max-width: 900px;
     height: 42vw;
@@ -1178,6 +1190,27 @@ p{
     font-weight: 400;
 }
 
+@media screen and (max-width:940px){
+    .shotgun{
+        position: relative;
+        bottom: 2vw;
+        /* width: 1800px; */
+        width: 102vw;
+        left: 8vw;
+        max-width: 1800px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .shotgun{
+        position: relative;
+        bottom: 5vw;
+        /* width: 1800px; */
+        width: 101vw;
+        left: 8vw;
+        max-width: 1800px;
+    }
+}
 
 
 @media screen and (max-width:500px){
