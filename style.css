@@ -508,7 +508,7 @@ transition: all 1s ease-out;
 }
 
 .socialimg:hover{
-    background-color: white;
+    /* background-color: white; */
 }
 
 .socials{
